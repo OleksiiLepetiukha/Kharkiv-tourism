@@ -11,12 +11,17 @@ body {
 
 }
 
+header {
+    background-image: url("../images/kahrkiv-edit.png");
+    height: 18em;
+}
+
 .header-menu {
     display: flex;
     justify-content: space-around;
-    padding: 1em 0;
-    align-items: center;
-    background-color: rgb(102, 202, 102);
+    padding: 1.5em 0;
+    align-items: baseline;
+    background-color: rgb(22 21 21 / 50%);
     text-align: center;
 }
 
@@ -128,10 +133,10 @@ h1 {
     padding: .3em;
 }
 
-.subscription input:active {
-    border: none;
-}
-
+.subscription input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+} 
 
 .subscription button::before {
     content: '\f1d8';
