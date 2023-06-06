@@ -1,0 +1,207 @@
+@import url('fonts.css');
+
+body {
+    max-width: 1440px;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+    align-items: center;
+    background-color: rgb(102, 202, 102);
+    text-align: center;
+}
+
+
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+@media screen and (max-width: 480px) {}
+
+.header-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.article article {
+    display: flex;
+    margin: 4em;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.article h2 {
+    flex: 0 1 auto;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.article p {
+    flex: 0 1 auto;
+    padding: 0 4em;
+}
+
+.city-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 1em;
+
+}
+
+.city-images img {
+    width: 100%;
+}
+
+.videos {
+    margin-bottom: 2em;
+}
+
+.videos h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    padding: 2em 0;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.content video {
+    width: 100%;
+}
+
+
+
+.subscription {
+    width: 80%;
+    background-color: rgb(102, 202, 102);
+    text-align: center;
+    margin: 2em auto;
+    padding: 3em 1em;
+}
+
+.subscription h3 {
+    padding: 1.5em 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #000;
+}
+
+.subscription div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.subscription button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.subscription input {
+    border: none;
+    border-radius: 0;
+    padding: .3em;
+}
+
+.subscription input:active {
+    border: none;
+}
+
+
+.subscription button::before {
+    content: '\f1d8';
+    font-family: 'Font Awesome';
+    font-size: 1em;
+    color: green;
+}
+
+.footer {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.social_media {
+    color: #808080;
+}
+
+.social_media nav {
+    margin: 0 auto;
+    width: 65%;
+    border-top: #808080 solid 2px;
+    padding: 2em 0;
+}
+
+.social_media .navigation a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-tiktok {
+    color: #808080;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 70%;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 50%;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .city-images {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+}
