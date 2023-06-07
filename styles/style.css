@@ -13,22 +13,26 @@ body {
 
 header {
     background-image: url("../images/kahrkiv-edit.png");
-    height: 18em;
+    background-size: cover;
 }
 
 .header-menu {
     display: flex;
     justify-content: space-around;
-    padding: 1.5em 0;
-    align-items: baseline;
+    align-items: center;
     background-color: rgb(22 21 21 / 50%);
-    text-align: center;
+    padding: 3em 0;
 }
 
 
 
 h1 {
     font-size: 2em;
+}
+
+.header-menu a {
+    display: inline-block;
+    text-decoration: none;
     color: #fff;
 }
 
@@ -36,14 +40,29 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 2em;
+    padding-right: 1em;
 }
 
-@media screen and (max-width: 480px) {}
-
-.header-menu a {
-    text-decoration: none;
-    color: #fff;
+.header-menu .navigation a {
+    position: relative;
 }
+
+.header-menu .navigation a::before {
+    content: "";
+    width: 0;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    top: 1em;
+    transition: width 0.8s;
+}
+
+.header-menu .navigation a:hover::before {
+    width: 100%;
+    padding: 0.1em;
+}
+
 
 .article article {
     display: flex;
@@ -133,10 +152,12 @@ h1 {
     padding: .3em;
 }
 
-.subscription input:active, :hover, :focus {
+.subscription input:active,
+:hover,
+:focus {
     outline: 0;
     outline-offset: 0;
-} 
+}
 
 .subscription button::before {
     content: '\f1d8';
@@ -165,6 +186,23 @@ h1 {
     text-decoration: none;
     color: #000;
     font-weight: 500;
+    position: relative;
+}
+
+.footer .navigation a::before {
+    content: "";
+    width: 0;
+    background-color: rgb(102, 202, 102);
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    top: 1em;
+    transition: width 0.8s;
+}
+
+.footer .navigation a:hover::before {
+    width: 100%;
+    padding: 0.1em;
 }
 
 .fa-facebook,
@@ -182,7 +220,8 @@ h1 {
     }
 
     .header-menu {
-        display: block;
+       flex-direction: column;
+       padding-bottom: 1.5em;
     }
 
     .content {
@@ -197,9 +236,15 @@ h1 {
         font-size: 50%;
     }
 
-    .navigation {
-        display: block;
+    .header-menu {
+        padding-bottom: .5em;
     }
+
+    .navigation {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
 
     .city-images {
         grid-template-columns: 1fr;
@@ -210,3 +255,28 @@ h1 {
     }
 
 }
+  
+  svg text {
+    font-family: 'Poppins';
+    stroke: rgb(102, 202, 102);
+    font-weight: 700;
+    stroke-width: 3;
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(180, 18%, 97%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+  }
