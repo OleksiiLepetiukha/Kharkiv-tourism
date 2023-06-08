@@ -17,25 +17,26 @@
         <section class="header-menu">
             <h1>
                 <a href="index.html">
-                    <svg width="100%">
-                        <defs>
-                            <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
-                        </defs>
-                        <text x="50%" y="60%" text-anchor="middle">
-                            Kharkiv
-                        </text>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 40"
+                        style="enable-background:new 0 0 200 100;" xml:space="preserve" width="150px" height="40px">
+                        
+                        <text transform="matrix(1 0 0 1 2.374649e-04 32.7058)">Kharkiv</text>
                     </svg>
                 </a>
             </h1>
             <nav>
                 <ul class="navigation">
-                    <li><a href="index.html">HOME</a></li>
+                    <li class="selected"><a href="index.html">HOME</a></li>
                     <li><a href="dining.html">DINING</a></li>
                     <li><a href="attractions.html">ATTRACTIONS</a></li>
                     <li><a href="events.html">EVENTS</a></li>
                     <li><a href="contacts.html">CONTACTS</a></li>
                 </ul>
             </nav>
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
+                <i class="fa-solid fa-bars"></i>
+              </a>
         </section>
     </header>
     <div class="container">
@@ -50,9 +51,9 @@
                         nobis dolore.</p>
                 </article>
                 <div class="city-images">
-                    <img src="images/licensed-image.jfif" alt="city image">
-                    <img src="images/licensed-image.jfif" alt="city image">
-                    <img src="images/licensed-image.jfif" alt="city image">
+                    <img src="images/licensed-image.jfif" alt="Derjprom image">
+                    <img src="images/rail-station.jpg" alt="Railway station image">
+                    <img src="images/mirrore-stream.jpg" alt="Mirrore stream image">
                 </div>
             </section>
             <section class="videos">
@@ -80,10 +81,10 @@
             </section>
             <section class="subscription">
                 <h3>And more stuff for Subscription</h3>
-                <div>
+                <form action="/action_page.php" method="post">
                     <input type="email" placeholder="Enter your email" required>
                     <button type="submit"></button>
-                </div>
+                </form>
             </section>
         </main>
     </div>
@@ -91,14 +92,16 @@
         <section class="social_media">
             <h3>Follow Us</h3>
             <span class="social_media-links">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/kharkiv1654/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/khpg"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com/kharkiv_1654?igshid=ZWQyN2ExYTkwZQ=="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kharkiv.ua?_t=8cyCEd0xt9p"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="mailto:kharkiv@hk.ua"><i class="fa-solid fa-envelope"></i></a>
             </span>
             <nav>
                 <ul class="navigation">
-                    <li><a href="index.html">HOME</a></li>
+                    <li class="selected"><a href="index.html">HOME</a></li>
                     <li><a href="dining.html">DINING</a></li>
                     <li><a href="attractions.html">ATTRACTIONS</a></li>
                     <li><a href="events.html">EVENTS</a></li>

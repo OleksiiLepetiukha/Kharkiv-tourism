@@ -1,28 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dining</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <Header>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="dining.html">DINING</a></li>
-                <li><a href="attractions.html">ATTRACTIONS</a></li>
-                <li><a href="events.html">EVENTS</a></li>
-                <li><a href="contacts.html">CONTACTS</a></li>
-            </ul>
-    </Header>
-    <main>
-        <sections></sections>
-        <sections></sections>
-    </main>
-    <footer></footer>
+    <header>
+        <section class="header-menu">
+            <h1>
+                <a href="index.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 40"
+                        style="enable-background:new 0 0 200 100;" xml:space="preserve" width="150px" height="40px">
+
+                        <text transform="matrix(1 0 0 1 2.374649e-04 32.7058)">Kharkiv</text>
+                    </svg>
+                </a>
+            </h1>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="selected"><a href="dining.html">DINING</a></li>
+                    <li><a href="attractions.html">ATTRACTIONS</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </section>
+    </header>
+    <div class="container">
+        <main>
+            <sections class="restaurants">
+                <h2>Amazing restaurants</h2>
+                <div class="blocks">
+                    <div class="restaurant-block">
+                        <img src="images/restaurants/it-redaction.jpg" alt="Italian Edition Restaurant photo">
+                        <h3>Italian Edition</h3>
+                        <ul class="restaurant-info">
+                            <li>Cuisine: italian</li>
+                            <li>Tables: 30</li>
+                            <li>Average price: 20$</li>
+                            <li>Address: Sumska St, 19</li>
+                            <li>Contact: <a href="tel:+380956940117">+380 95 694 0117</a></li>
+                        </ul>
+                        <button class="restaurant-button" onclick="drop()">More...</button>
+                    </div>
+                    <div class="restaurant-block">
+                        <img src="images/restaurants/gor1654.jpg" alt="1654 Restaurant photo">
+                        <h3>1654</h3>
+                        <ul class="restaurant-info">
+                            <li>Cuisine: Europian</li>
+                            <li>Tables: 20</li>
+                            <li>Average price: 20$</li>
+                            <li>Address: Konsytutsii Sq, 2/2</li>
+                            <li>Contact: <a href="tel:+380971654000">+380 97 165 4000</a></li>
+                        </ul>
+                        <button class="restaurant-button" onclick="drop()">More...</button>
+                    </div>
+                    <div class="restaurant-block">
+                        <img src="images/restaurants/nasha-dacha.jpg" alt="Nasha Dacha Restaurant photo">
+                        <h3>Nasha Dacha</h3>
+                        <ul class="restaurant-info">
+                            <li>Cuisine: Ukrainian</li>
+                            <li>Tables: 70</li>
+                            <li>Average price: 50$</li>
+                            <li>Address: Batums'ka St, 4A</li>
+                            <li>Contact: <a href="tel:+380501085870">+380 50 108 5870</a></li>
+                        </ul>
+                        <button class="restaurant-button" onclick="drop()">More...</button>
+                    </div>
+                    <div class="restaurant-block">
+                        <img src="images/restaurants/chehov.jpg" alt="Chekhov Restaurant photo">
+                        <h3>Chekhov</h3>
+                        <ul class="restaurant-info">
+                            <li>Cuisine: Ukrainian</li>
+                            <li>Tables: 30</li>
+                            <li>Average price: 50$</li>
+                            <li>Address: Sumska St, 84/2</li>
+                            <li>Contact: <a href="tel:+380687150708">+380 68 715 0708</a></li>
+                        </ul>
+                        <button class="restaurant-button" onclick="drop()">More...</button>
+                    </div>
+                    <div class="restaurant-block">
+                        <img src="images/restaurants/diadia.jpg" alt="MamaManana Restaurant photo">
+                        <h3>Mama Manana</h3>
+                        <ul class="restaurant-info">
+                            <li>Cuisine: Georgian</li>
+                            <li>Tables: 20</li>
+                            <li>Average price: 30$</li>
+                            <li>Address: Pavlivska Sq, 20</li>
+                            <li>Contact: <a href="tel:+380504161017">+380 50 416 1017</a></li>
+                        </ul>
+                        <button class="restaurant-button" onclick="drop()">More...</button>
+                    </div>
+                    <div class="restaurant-block">
+                        <img src="images/restaurants/jzl.jpg" alt="Tangerin Restaurant photo">
+                        <h3>Tangerin</h3>
+                        <ul class="restaurant-info">
+                            <li>Cuisine: Oriental</li>
+                            <li>Tables: 23</li>
+                            <li>Average price: 10$</li>
+                            <li>Address: Kostyuryns'ky Ln, 2</li>
+                            <li>Contact: <a href="tel:+380501711017">+380 50 171 1017</a></li>
+                        </ul>
+                        <button class="restaurant-button" onclick="drop()">More...</button>
+                    </div>
+                    <div class="restaurant-block">
+                        <img src="images/restaurants/protagon.jpg" alt="Kinoshniki Restaurant photo">
+                        <h3>Kinoshniki</h3>
+                        <ul class="restaurant-info">
+                            <li>Cuisine: Ukrainian</li>
+                            <li>Tables: 25</li>
+                            <li>Average price: 20$</li>
+                            <li>Address: Kosmichna St, 4/11</li>
+                            <li>Contact: <a href="tel:+380504022201">+380 50 402 2201</a></li>
+                        </ul>
+                        <button class="restaurant-button" onclick="drop()">More...</button>
+                    </div>
+                    <div class="restaurant-block">
+                        <img src="images/restaurants/sushi.jpg" alt="Sushi & Wine Restaurant photo">
+                        <h3>Sushi & Wine</h3>
+                        <ul class="restaurant-info">
+                            <li>Cuisine: Asian</li>
+                            <li>Tables: 10</li>
+                            <li>Average price: 15$</li>
+                            <li>Address: Nauky Ave, 23</li>
+                            <li>Contact: <a href="tel:+380997170012">+380997170012</a></li>
+                        </ul>
+                        <button class="restaurant-button" onclick="drop()">More...</button>
+                    </div>
+                </div>
+            </sections>
+            <sections></sections>
+        </main>
+    </div>
+    <footer class="footer">
+        <section class="social_media">
+            <h3>Follow Us</h3>
+            <span class="social_media-links">
+                <a href="https://www.facebook.com/kharkiv1654/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/khpg"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com/kharkiv_1654?igshid=ZWQyN2ExYTkwZQ=="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kharkiv.ua?_t=8cyCEd0xt9p"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="mailto:kharkiv@hk.ua"><i class="fa-solid fa-envelope"></i></a>
+            </span>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="selected"><a href="dining.html">DINING</a></li>
+                    <li><a href="attractions.html">ATTRACTIONS</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <p>© 2023 Oleksii Lepetiukha</p>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
