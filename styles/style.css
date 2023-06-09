@@ -324,6 +324,7 @@ svg text {
     width: 49%;
     margin-bottom: 1em;
     font-size: 1em;
+    line-height: 1.2;
 }
 
 .culture-block img {

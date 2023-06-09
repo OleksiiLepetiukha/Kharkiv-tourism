@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Font Awesome';
-    src: url('../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2') format('woff2');
-    src: url('../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2') format('woff2');
+    src: url('../fonts/fa-regular-400.woff2') format('woff2');
+    src: url('../fonts/fa-solid-900.woff2') format('woff2');
 }
 
 @font-face {
