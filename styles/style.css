@@ -1,5 +1,6 @@
 @import url('fonts.css');
 
+
 body {
     max-width: 1440px;
     font-family: 'Poppins';
@@ -64,7 +65,7 @@ h1 {
     padding: 0.1em;
 }
 
-.fa-bars{
+.fa-bars {
     font-size: 1rem;
     color: #fff;
     padding: 0 .2em;
@@ -84,7 +85,7 @@ h1 {
 
 .article h2 {
     flex: 0 1 auto;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -110,7 +111,7 @@ h1 {
 }
 
 .videos h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     text-align: center;
     padding: 2em 0;
@@ -254,7 +255,7 @@ svg text {
 }
 
 .restaurants h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     text-align: center;
     padding: 2em 0;
@@ -277,6 +278,10 @@ svg text {
     width: 100%;
 }
 
+.restaurant-block h3{
+    font-weight: 600;
+}
+
 .restaurant-block img {
     width: 100%;
 }
@@ -297,14 +302,38 @@ svg text {
     text-align: center;
 }
 
+.bar-culture {
+   display: block;
+    margin: 5em 0;
+}
 
+.bar-culture h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 2em .5em;
+    width: 30%;
+}
 
+.bar-culture-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.culture-block {
+    width: 49%;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
 
+.culture-block img {
+    width: 100%;
+}
 
-
-
-
+.culture-block strong {
+    font-weight: 700;
+    font-size: 1.2em;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -334,7 +363,7 @@ svg text {
 
 @media screen and (max-width: 480px) {
     body {
-        font-size: 50%;
+        font-size: 70%;
     }
 
     .header-menu {
@@ -344,7 +373,7 @@ svg text {
     }
 
     svg text {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .header-menu .icon {
@@ -375,4 +404,20 @@ svg text {
         grid-template-columns: 1fr;
     }
 
+    .bar-culture-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .culture-block {
+        width: 100%;
+    }
+
+    .bar-culture h2{
+        width: 50%;
+    }
+
+    .bar-culture {
+        margin-top: 3em;
+    }
 }

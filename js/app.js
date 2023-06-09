@@ -7,10 +7,6 @@ function burger() {
     }
 }
 
-
-
-
-
 function drop() {
 
     const info = document.querySelector('.restaurant-info');
@@ -21,3 +17,4 @@ function drop() {
         info.style.display = 'flex';
     }
 }
+
