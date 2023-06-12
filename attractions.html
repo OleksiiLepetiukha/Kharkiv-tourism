@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -41,6 +42,41 @@
     </header>
     <div class="container">
         <main>
+            <section class="slider" style="--swiper-theme-color:rgb(102, 202, 102); --swiper-navigation-size: 3em;">
+                <h2>Kharkiv Famous Places</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/zerkalnaya_struya.jpg">
+                            <p><strong>Mirror Stream</strong> (Ukrainian: Дзеркальний струмінь, Dzerkalʹnyi struminʹ) is a fountain in
+                                Kharkiv, Ukraine. The natural fountain was
+                                discovered in 1947. <br>
+                                The fountain is near the Kharkiv Philharmonic.It was built in 1947. It remains one
+                                of the most remarkable architectural monuments in Kharkiv and, due to that, has been
+                                listed in UNESCO's Encyclopedia. <br>
+                                Former "Komsomol Heroes Alley" as photographed in 2007
+                                A "Komsomol Heroes Alley" with busts of young World War II heroes was located behind the
+                                fountain from 1958 until 2013. The busts were removed during the construction of the
+                                new church Khram Svyatykh Zhon-Myronosytsʹ, due to the 2015 decommunization laws they
+                                have never returned.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/zerkalnaya_struya.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/zerkalnaya_struya.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/zerkalnaya_struya.jpg" "></div>
+                        <div class=" swiper-slide">
+                            <img src="images/zerkalnaya_struya.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
             <section></section>
             <section></section>
         </main>
@@ -60,15 +96,15 @@
                 <ul class="navigation">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="dining.html">DINING</a></li>
-                    <li><a href="attractions.html">ATTRACTIONS</a></li>
-                    <li class="selected"><a href="events.html">EVENTS</a></li>
+                    <li class="selected"><a href="attractions.html">ATTRACTIONS</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
                     <li><a href="contacts.html">CONTACTS</a></li>
                 </ul>
             </nav>
             <p>© 2023 Oleksii Lepetiukha</p>
         </section>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

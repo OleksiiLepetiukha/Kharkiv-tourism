@@ -43,6 +43,7 @@ h1 {
     justify-content: center;
     gap: 2em;
     padding-right: 1em;
+    transition: all 0.8s;
 }
 
 .header-menu .navigation a {
@@ -278,7 +279,7 @@ svg text {
     width: 100%;
 }
 
-.restaurant-block h3{
+.restaurant-block h3 {
     font-weight: 600;
 }
 
@@ -303,7 +304,7 @@ svg text {
 }
 
 .bar-culture {
-   display: block;
+    display: block;
     margin: 5em 0;
 }
 
@@ -336,6 +337,70 @@ svg text {
     font-size: 1.2em;
 }
 
+.slider {
+    position: relative;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.slider h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper .swiper-pagination {
+    position: relative;
+    padding-top: 1em;
+}
+
+.swiper-slide {
+    text-align: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.swiper-slide img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.swiper-slide p {
+    text-align: justify;
+    font-size: 1em;
+    width: 75%;
+    padding: 0.5em;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.swiper-slide p strong {
+    font-weight: 600;
+
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 5% !important;
+    left: auto;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 5% !important;
+    right: auto;
+}
 
 @media screen and (max-width: 768px) {
     body {
@@ -351,7 +416,10 @@ svg text {
         grid-template-columns: 1fr 1fr;
     }
 
-
+    .slider .swiper-button-prev,
+    .slider .swiper-button-next {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -393,7 +461,9 @@ svg text {
         width: 100%;
         height: 220px;
         background-color: rgb(102, 202, 102);
-        font-size: 2em;
+        opacity: 0.9;
+        font-size: 1.5em;
+        z-index: 20;
     }
 
 
@@ -414,7 +484,7 @@ svg text {
         width: 100%;
     }
 
-    .bar-culture h2{
+    .bar-culture h2 {
         width: 50%;
     }
 
