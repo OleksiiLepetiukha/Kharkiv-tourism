@@ -277,6 +277,7 @@ svg text {
     align-items: center;
     gap: 1em;
     width: 100%;
+    position: relative;
 }
 
 .restaurant-block h3 {
@@ -289,6 +290,10 @@ svg text {
 
 .restaurant-info {
     display: none;
+}
+
+.js-toggle-visibility {
+    display: flex;
     flex-direction: column;
     gap: .5em;
 }
@@ -301,6 +306,7 @@ svg text {
     padding: 0.5em 1.5em;
     color: #fff;
     text-align: center;
+    cursor: pointer;
 }
 
 .bar-culture {
@@ -368,6 +374,7 @@ svg text {
     justify-content: center;
     align-items: center;
     position: relative;
+    background: transparent;
 
 }
 
@@ -383,6 +390,18 @@ svg text {
     padding: 0.5em;
     line-height: 1.5;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.attraction-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-top: 1em;
+}
+
+.attraction-image img {
+    width: 33%;
 }
 
 .swiper-slide p strong {
@@ -402,6 +421,194 @@ svg text {
     right: auto;
 }
 
+.main-baner video {
+    width: 100%;
+}
+
+.events-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.all-events {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.events-block {
+    display: flex;
+    gap: 0.5em;
+    border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
+    padding-bottom: 1.2em;
+    line-height: 1.5;
+    align-items: center;
+}
+
+.events-block h2 {
+    font-weight: 500;
+    font-size: 0.8em;
+    padding-bottom: 0.5em;
+}
+
+.events-block h3 {
+    font-weight: 700;
+    padding-bottom: 0.5em;
+}
+
+.events-block p {
+    font-size: 0.6em;
+}
+
+.events-block p:last-child {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.5em;
+}
+
+.events-block img {
+    width: 50%;
+}
+
+.recommend {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommend h2 {
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 0 2em 1em;
+    margin-bottom: 1em;
+    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
+
+.recommend-block {
+    display: flex;
+    gap: 0.5em;
+    padding-bottom: 1em;
+    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+    margin-bottom: 1em;
+}
+
+.recommend-block img {
+    width: 50%;
+}
+
+.recommend-block article {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+font-size: 0.8em;
+}
+
+.recommend-block article p {
+    font-size: 0.7em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+    gap: 2em;
+}
+
+.contacts form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 0.5em;
+}
+
+.contacts label,
+.contacts input,
+.contacts textarea {
+    display: block;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.form-control {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+textarea {
+    min-height: 10em;
+}
+
+.form-control input,
+.form-control textarea {
+    padding: 0.5em;
+}
+
+.contacts h2 {
+    font-weight: 600;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #000;
+    margin: 0.5em 0;
+}
+
+.contacts form a:first-child::before {
+    content: '\f2a0';
+    font-family: 'Font Awesome';
+    font-size: 1.2em;
+    margin-right: 0.2em;
+}
+
+.contacts form a:nth-child(2)::before {
+    content: '\f0e0';
+    font-family: 'Font Awesome';
+    font-size: 1.2em;
+    margin-right: 0.2em;
+}
+
+.location {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.location iframe,
+.location object,
+.location embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts button {
+    width: 25%;
+    padding: 0.5em 1em;
+    background-color: rgb(102, 202, 102);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contacts button::before {
+    content: '\f1d8';
+    font-family: 'Font Awesome';
+    font-size: 1.2em;
+}
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 70%;
@@ -412,8 +619,19 @@ svg text {
         padding-bottom: 6em;
     }
 
+    .article p {
+        padding: 0 2em;
+    }
+
     .content {
         grid-template-columns: 1fr 1fr;
+    }
+    .recommend-block {
+        flex-direction: column;
+    }
+
+    .recommend-block img {
+        width: 100%;
     }
 
     .slider .swiper-button-prev,
@@ -427,6 +645,27 @@ svg text {
     .blocks {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
+    }
+
+    .events-block {
+        flex-direction: column;
+    }
+
+    .events-block img {
+        width: 100%;
+    }
+
+    
+
+   
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contacts form {
+        width: 75%;
+        align-items: center;
     }
 }
 
@@ -466,6 +705,13 @@ svg text {
         z-index: 20;
     }
 
+    .article article {
+        flex-direction: column;
+    }
+
+    .article p {
+        padding: 0 1em;
+    }
 
     .city-images {
         grid-template-columns: 1fr;
@@ -491,4 +737,6 @@ svg text {
     .bar-culture {
         margin-top: 3em;
     }
+
+
 }
