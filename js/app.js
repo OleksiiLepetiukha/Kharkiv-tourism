@@ -7,26 +7,23 @@ function burger() {
     }
 }
 
-function drop() {
-
-    const info = document.querySelector('.restaurant-info');
-    console.log('clikced');
-    if (info.style.display === 'flex') {
-        info.style.display = 'none';
-    } else {
-        info.style.display = 'flex';
-    }
+function drop(event) {
+    const par = event.target.parentNode;
+    const info = par.querySelector('.restaurant-info');
+    info.classList.toggle('js-toggle-visibility');
+    const btn = par.querySelector('.restaurant-button')
+    btn.innerHTML = (info.classList.length > 1) ? 'Less...' : 'More..';
 }
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: ".swiper-pagination",
+        el: ".swiper-pagination",
     },
     mousewheel: true,
     keyboard: true,
-  });
+});
