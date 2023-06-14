@@ -42,30 +42,28 @@
     <div class="container">
         <main>
             <section class="contacts">
-                <form action="#">
+                <form class="callback-form" action="#" novalidate>
                     <a href="tel:+380577574513">+380 57 757 4513</a>
                     <a href="mailto:kharkiv@hk.ua">Mail Us</a>
                     <h2>Callback form</h2>
                     <div class="form-control">
-                        <label>Full Name
-                            <input required type="text" name="firstName">
-                        </label>
-
+                        <label for="fullName">Full Name</label>
+                        <input id="fullName" required type="text" name="fullName">
+                        <div class="field-error"></div>
                     </div>
                     <div class="form-control">
-                        <label>Email
-                            <input required type="email" name="email">
-                        </label>
+                        <label for="email">Email</label>
+                        <input id="email" required type="email" name="email">
+                        <div class="field-error"></div>
                     </div>
                     <div class="form-control">
-                        <label>Phone number
-                            <input required type="number" name="phone">
-                        </label>
+                        <label for="phone">Phone number</label>
+                        <input id="phone" required type="number" name="phone">
+                        <div class="field-error"></div>
                     </div>
                     <div class="form-control">
-                        <label>Enter your question
-                            <textarea required name="story"></textarea>
-                        </label>
+                        <label for="story">Enter your question</label>
+                        <textarea id="story" required name="story"></textarea>
                     </div>
                     <button type="submit"></button>
                 </form>
