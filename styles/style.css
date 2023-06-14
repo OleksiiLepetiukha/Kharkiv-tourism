@@ -1,5 +1,6 @@
 @import url('fonts.css');
 
+/* default */
 
 body {
     max-width: 1440px;
@@ -11,6 +12,8 @@ body {
     margin: 0 auto;
 
 }
+
+/* Header */
 
 header {
     background-image: url("../images/kahrkiv-edit.png");
@@ -76,6 +79,8 @@ h1 {
     display: none;
 }
 
+/* Home page section 'article' */
+
 .article article {
     display: flex;
     margin: 4em;
@@ -107,6 +112,8 @@ h1 {
     width: 100%;
 }
 
+/* Home page section 'videos' */
+
 .videos {
     margin-bottom: 2em;
 }
@@ -129,7 +136,7 @@ h1 {
     width: 100%;
 }
 
-
+/* Home page section 'subscription */
 
 .subscription {
     width: 80%;
@@ -176,6 +183,8 @@ h1 {
     font-size: 1em;
     color: green;
 }
+
+/* footer */
 
 .footer {
     text-align: center;
@@ -229,7 +238,7 @@ h1 {
     font-weight: 600;
 }
 
-
+/* Logo animation */
 
 svg text {
     font-family: 'Poppins';
@@ -252,6 +261,8 @@ svg text {
         stroke-dashoffstet: -20%;
         fill: hsla(189, 68%, 75%, 0%)
     }
+
+    /* Dining page section 'restaurants' */
 
 }
 
@@ -309,6 +320,8 @@ svg text {
     cursor: pointer;
 }
 
+/* Dininf page section 'bar culture' */
+
 .bar-culture {
     display: block;
     margin: 5em 0;
@@ -342,6 +355,8 @@ svg text {
     font-weight: 700;
     font-size: 1.2em;
 }
+
+/* Attractions page  */
 
 .slider {
     position: relative;
@@ -421,9 +436,7 @@ svg text {
     right: auto;
 }
 
-.main-baner video {
-    width: 100%;
-}
+/* Events page section 'events info' */
 
 .events-info {
     display: flex;
@@ -471,6 +484,8 @@ svg text {
     width: 50%;
 }
 
+/* events page aside 'recommend' */
+
 .recommend {
     width: 30%;
     display: flex;
@@ -510,6 +525,8 @@ font-size: 0.8em;
     color: rgba(0, 0, 0, 0.5);
 }
 
+/* contacts page */
+
 .contacts {
     width: 100%;
     display: flex;
@@ -519,7 +536,9 @@ font-size: 0.8em;
     gap: 2em;
 }
 
-.contacts form {
+/* form */
+
+.contacts .callback-form {
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -561,19 +580,26 @@ textarea {
     margin: 0.5em 0;
 }
 
-.contacts form a:first-child::before {
+.contacts .callback-form a:first-child::before {
     content: '\f2a0';
     font-family: 'Font Awesome';
     font-size: 1.2em;
     margin-right: 0.2em;
 }
 
-.contacts form a:nth-child(2)::before {
+.contacts .callback-form a:nth-child(2)::before {
     content: '\f0e0';
     font-family: 'Font Awesome';
     font-size: 1.2em;
     margin-right: 0.2em;
 }
+
+.field-error {
+    color: red;
+    font-weight: bold;
+}
+
+/* contacts page map */
 
 .location {
     width: 100%;
@@ -608,6 +634,8 @@ textarea {
     font-family: 'Font Awesome';
     font-size: 1.2em;
 }
+
+/* Media queries */
 
 @media screen and (max-width: 768px) {
     body {
